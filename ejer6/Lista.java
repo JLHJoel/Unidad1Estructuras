@@ -90,11 +90,11 @@ public class Lista{
 
     public boolean eliminar(String nombre){
         if(!vacia()){
-            if(nombre==inicio.elemento){
+            if(nombre.equals(inicio.elemento)){
                 eliminarInicio();
                 return true;
             }
-            else if(nombre==fin.elemento){
+            else if(nombre.equals(fin.elemento)){
                 eliminarFinal();
                 return true;
             }
